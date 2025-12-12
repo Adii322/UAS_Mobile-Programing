@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modify this file to customize your launch splash screen -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/splash_background" />
+
+    <!-- Center content (logo + judul yang sudah jadi 1 gambar) -->
+    <item android:gravity="center">
+        <bitmap
+            android:src="@drawable/splash_center"
+            android:antialias="true" />
+    </item>
+
+    <!-- Branding di bawah -->
+    <item
+        android:gravity="bottom"
+        android:bottom="40dp">
+        <bitmap
+            android:src="@drawable/splash_branding"
+            android:antialias="true" />
+    </item>
+</layer-list>
