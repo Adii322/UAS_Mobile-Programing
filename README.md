@@ -8,17 +8,14 @@ Aplikasi ini menyediakan artikel Islami, edukasi kesehatan, serta fitur run trak
 - 🔐 **Autentikasi Pengguna**  
   Register, Login, Logout, dan Session Management menggunakan Supabase Auth.
 
-- 📚 **Manajemen Artikel**  
-  Menampilkan daftar artikel kesehatan Islami yang tersimpan di Supabase Database.
-
-- 🖼️ **Media Storage**  
-  Upload dan menampilkan gambar artikel melalui Supabase Storage.
+- 📚 **Manajemen Run traking**  
+  Menampilkan daftar run traking yang tersimpan di Supabase Database.
 
 - ⚡ **State Management dengan GetX**  
   Controller, routing, reaktif, dan dependency injection.
 
-- 🌐 (Opsional) **Artikel API Eksternal**  
-  Mendukung integrasi API Islami seperti Quran/Hadith API.
+- 🌐  **Artikel API Eksternal**  
+  Mendukung integrasi API artikel.
 
 ## 🏗️ Arsitektur Teknologi
 
