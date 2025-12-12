@@ -1,16 +1,181 @@
 # young_care
 
-A new Flutter project.
+Siap Adi! 🤗✨
+Berikut aku buatkan **README.md** yang **rapi**, **profesional**, **komplit**, dan **tampilannya menarik** dengan emoji, badge, struktur jelas, dan mudah dibaca.
 
-## Getting Started
+README ini cocok untuk GitHub, laporan proyek, atau dokumentasi resmi.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+# 🎉 **README.md — Islamic Health Article App**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+````md
+# 📱 Islamic Health Article App  
+Aplikasi artikel bertema **Kesehatan Islami** berbasis Flutter, menggunakan **Supabase** sebagai backend dan **GetX** untuk state management.  
+Aplikasi ini menyediakan artikel Islami, edukasi kesehatan, serta sistem autentikasi pengguna yang aman dan modern.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🚀 Fitur Utama
+
+- 🔐 **Autentikasi Pengguna**  
+  Register, Login, Logout, dan Session Management menggunakan Supabase Auth.
+
+- 📚 **Manajemen Artikel**  
+  Menampilkan daftar artikel kesehatan Islami yang tersimpan di Supabase Database.
+
+- 🖼️ **Media Storage**  
+  Upload dan menampilkan gambar artikel melalui Supabase Storage.
+
+- ⚡ **State Management dengan GetX**  
+  Controller, routing, reaktif, dan dependency injection.
+
+- 🌐 (Opsional) **Artikel API Eksternal**  
+  Mendukung integrasi API Islami seperti Quran/Hadith API.
+
+---
+
+## 🏗️ Arsitektur Teknologi
+
+| Layer | Teknologi |
+|-------|-----------|
+| Frontend | Flutter + GetX |
+| Backend | Supabase (Auth, DB, Storage) |
+| State Management | GetX Controller |
+| Networking | Supabase Dart SDK |
+| Eksternal API | (Opsional) Hadith API / Quran API |
+
+---
+
+## 📡 Daftar Endpoint API
+
+### 🔐 **Authentication API**
+| Operation | Method | Endpoint |
+|-----------|--------|----------|
+| Register | POST | `/auth/v1/signup` |
+| Login | POST | `/auth/v1/token?grant_type=password` |
+| Logout | POST | `/auth/v1/logout` |
+
+### 📚 **Articles API (Supabase DB Table: `articles`)**
+| Operation | Method | Endpoint |
+|-----------|--------|----------|
+| Get All Articles | GET | `/rest/v1/articles?select=*` |
+| Get Article by ID | GET | `/rest/v1/articles?id=eq.{id}` |
+| Create Article | POST | `/rest/v1/articles` |
+| Update Article | PATCH | `/rest/v1/articles?id=eq.{id}` |
+| Delete Article | DELETE | `/rest/v1/articles?id=eq.{id}` |
+
+### 🖼️ **Storage API**
+| Operation | Method | Endpoint |
+|-----------|--------|----------|
+| Upload Image | POST | `/storage/v1/object/articles_images/{file}` |
+| Get Public URL | GET | `/storage/v1/object/public/articles_images/{file}` |
+
+---
+
+## 📦 Instalasi & Setup
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/username/project.git
+cd project
+````
+
+### 2️⃣ Install Dependencies
+
+```bash
+flutter pub get
+```
+
+### 3️⃣ Konfigurasi Supabase
+
+Buka file:
+
+```
+lib/env.dart
+```
+
+Isi dengan:
+
+```dart
+const SUPABASE_URL = "https://YOUR-PROJECT.supabase.co";
+const SUPABASE_KEY = "YOUR-PUBLIC-ANON-KEY";
+```
+
+### 4️⃣ Jalankan Aplikasi
+
+```bash
+flutter run
+```
+
+---
+
+## 📁 Struktur Folder Utama
+
+```
+lib/
+ ├─ app/
+ │   ├─ modules/
+ │   ├─ routes/
+ │   ├─ data/
+ │   └─ common/
+ ├─ core/
+ └─ main.dart
+```
+
+* `modules/` → halaman + controller
+* `data/` → provider API (Supabase, HTTP)
+* `routes/` → manajemen navigasi GetX
+* `common/` → component dan theme
+
+---
+
+## 🧩 Cara Kerja Aplikasi (Flow)
+
+### 🔐 Login Flow
+
+```
+User → Login Page → AuthController → Supabase Auth → Home Page
+```
+
+### 📚 Artikel Flow
+
+```
+Home → ArticleController → Supabase DB → Article List
+```
+
+### 🖼️ Upload Gambar (Admin)
+
+```
+Upload → Supabase Storage → Simpan URL → Tampilkan di Artikel
+```
+
+---
+
+## ✨ Preview UI (Opsional Tambahkan Screenshot)
+
+| Login                      | Home                     | Detail Artikel               |
+| -------------------------- | ------------------------ | ---------------------------- |
+| ![login](assets/login.png) | ![home](assets/home.png) | ![detail](assets/detail.png) |
+
+---
+
+## 🤝 Kontribusi
+
+Pull Request dan masukan sangat diterima!
+Gunakan branch baru sebelum melakukan PR.
+
+---
+
+## 📄 Lisensi
+
+Proyek ini menggunakan lisensi **MIT License**.
+
+---
+
+## 👤 Author
+
+Created by **Adi** ❤️
+Aplikasi untuk edukasi dan keperluan pembelajaran.
+
+
