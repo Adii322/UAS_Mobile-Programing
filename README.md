@@ -1,20 +1,7 @@
-# young_care
 
-Siap Adi! 🤗✨
-Berikut aku buatkan **README.md** yang **rapi**, **profesional**, **komplit**, dan **tampilannya menarik** dengan emoji, badge, struktur jelas, dan mudah dibaca.
-
-README ini cocok untuk GitHub, laporan proyek, atau dokumentasi resmi.
-
----
-
-# 🎉 **README.md — Islamic Health Article App**
-
-````md
-# 📱 Islamic Health Article App  
-Aplikasi artikel bertema **Kesehatan Islami** berbasis Flutter, menggunakan **Supabase** sebagai backend dan **GetX** untuk state management.  
-Aplikasi ini menyediakan artikel Islami, edukasi kesehatan, serta sistem autentikasi pengguna yang aman dan modern.
-
----
+# 📱young_care 
+Aplikasi artikel bertema **Run App** berbasis Flutter, menggunakan **Supabase** sebagai backend dan **GetX** untuk state management.  
+Aplikasi ini menyediakan artikel Islami, edukasi kesehatan, serta fitur run traking system dan sistem autentikasi pengguna yang aman dan modern.
 
 ## 🚀 Fitur Utama
 
@@ -33,8 +20,6 @@ Aplikasi ini menyediakan artikel Islami, edukasi kesehatan, serta sistem autenti
 - 🌐 (Opsional) **Artikel API Eksternal**  
   Mendukung integrasi API Islami seperti Quran/Hadith API.
 
----
-
 ## 🏗️ Arsitektur Teknologi
 
 | Layer | Teknologi |
@@ -44,8 +29,6 @@ Aplikasi ini menyediakan artikel Islami, edukasi kesehatan, serta sistem autenti
 | State Management | GetX Controller |
 | Networking | Supabase Dart SDK |
 | Eksternal API | (Opsional) Hadith API / Quran API |
-
----
 
 ## 📡 Daftar Endpoint API
 
@@ -70,8 +53,6 @@ Aplikasi ini menyediakan artikel Islami, edukasi kesehatan, serta sistem autenti
 |-----------|--------|----------|
 | Upload Image | POST | `/storage/v1/object/articles_images/{file}` |
 | Get Public URL | GET | `/storage/v1/object/public/articles_images/{file}` |
-
----
 
 ## 📦 Instalasi & Setup
 
@@ -108,8 +89,6 @@ const SUPABASE_KEY = "YOUR-PUBLIC-ANON-KEY";
 flutter run
 ```
 
----
-
 ## 📁 Struktur Folder Utama
 
 ```
@@ -127,8 +106,6 @@ lib/
 * `data/` → provider API (Supabase, HTTP)
 * `routes/` → manajemen navigasi GetX
 * `common/` → component dan theme
-
----
 
 ## 🧩 Cara Kerja Aplikasi (Flow)
 
@@ -150,28 +127,21 @@ Home → ArticleController → Supabase DB → Article List
 Upload → Supabase Storage → Simpan URL → Tampilkan di Artikel
 ```
 
----
-
 ## ✨ Preview UI (Opsional Tambahkan Screenshot)
 
 | Login                      | Home                     | Detail Artikel               |
 | -------------------------- | ------------------------ | ---------------------------- |
 | ![login](assets/login.png) | ![home](assets/home.png) | ![detail](assets/detail.png) |
 
----
 
 ## 🤝 Kontribusi
 
 Pull Request dan masukan sangat diterima!
 Gunakan branch baru sebelum melakukan PR.
 
----
-
 ## 📄 Lisensi
 
 Proyek ini menggunakan lisensi **MIT License**.
-
----
 
 ## 👤 Author
 
