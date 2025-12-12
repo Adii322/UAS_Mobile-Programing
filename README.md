@@ -128,7 +128,7 @@ Upload → Supabase Storage → Simpan URL → Tampilkan di Artikel
 
 | Login                      | Home                     | Detail Artikel               |
 | -------------------------- | ------------------------ | ---------------------------- |
-| ![login](assets/login.png) | ![home](assets/home.png) | ![detail](assets/detail.png) |
+| ![login](assets/Screenshot2025-10-30135949.png) | ![home](assets/home.png) | ![detail](assets/detail.png) |
 
 
 ## 🤝 Kontribusi
